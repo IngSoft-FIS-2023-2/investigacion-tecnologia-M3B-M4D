@@ -90,3 +90,22 @@ El manejo de versiones, como fue mencionado anteriormente, permite al desarrolla
 
 ## Gestionado de dependencias
 Otra funcionalidad clave de NPM es el gestionado de dependencias dentro del proyecto, esto refiere a que, por ejemplo: si un sector de desarrollo no requiere de cierto paquete, NPM permite manejar ese tipo de dependencias de tal manera que solamente se asignaran los paquetes necesarios para cada sector de desarrollo.
+
+### Referencias
+
+[Node](https://nodejs.org/en/docs)
+
+[Node Wikipedia](https://en.wikipedia.org/wiki/Node.js)
+
+[NPM](https://docs.npmjs.com/)
+
+## Recomendaciones de uso
+
+Recomendamos el uso tanto de nodeJS como de NPM cuando se requiera de un entorno de desarrollo web para producir a corta/media/gran escala productos de software web, donde estos facilitan la implementacion a su vez que los hacen mas practico y adaptable a cualquier dispositivo.
+
+## Recursos de aprendizaje
+
+- Manejo de evento asincronos
+- Gestion de dependencias dentro un proyecto
+- Manejo de modulos en node
+- Escalibilidad de la aplicacion de NodeJS y NPM en empresas de desarrollo front-end
