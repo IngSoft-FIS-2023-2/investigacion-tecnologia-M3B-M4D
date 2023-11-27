@@ -8,7 +8,7 @@
  - El principal objetivo de los test unitarios es garantizar que cada unidad de código funcione correctamente de manera aislada antes de integrarse con otras partes del software.
 
 **Requisitos**
-Para que una prueba unitaria tenga la calidad suficiente se deben cumplir los siguientes requisitos:
+ - Para que una prueba unitaria tenga la calidad suficiente se deben cumplir los siguientes requisitos:
 
   - Automatizable: No debería requerir una intervención manual.
 
