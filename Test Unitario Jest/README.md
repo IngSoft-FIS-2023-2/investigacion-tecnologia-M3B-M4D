@@ -1,7 +1,7 @@
 # Integrantes
 
-### Joaquin Erosa (245855)
+### Joaquin Berro (270028)
 
-### Nicolás Germán (270156)
+### Mauro Orona (285301)
 
-### Carola Quintana (305429)
+### Santiago Sacchi ()
