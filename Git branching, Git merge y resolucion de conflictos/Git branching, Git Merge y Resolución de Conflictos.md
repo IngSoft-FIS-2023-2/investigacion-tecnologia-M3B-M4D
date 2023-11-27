@@ -6,9 +6,9 @@ A la hora de ingresar en un proyecto o comenzar uno nuevo nos encontraremos con 
 
 Normalmente se utiliza la siguiente convención para organizar el flujo de trabajo:
 
-  - Se posee una rama histórica que es protegida y no puede ser eliminada por ambiente (develop, master, qa)
-  - Por cada feature que implementemos crearemos una rama, luego de terminado el desarrollo se debe mergear la misma a su rama padre.
-  - No se realizan commit directamente sobre las ramas históricas (develop, master, etc)
+- Se posee una rama histórica que es protegida y no puede ser eliminada por ambiente (develop, master, qa)
+- Por cada feature que implementemos crearemos una rama, luego de terminado el desarrollo se debe mergear la misma a su rama padre.
+- No se realizan commit directamente sobre las ramas históricas (develop, master, etc)
 
 # GIT MERGE
 
@@ -35,6 +35,7 @@ Normalmente se utiliza la siguiente convención para organizar el flujo de traba
 **Tipos de Conflictos:**
 
 1. **Conflictos al empezar el merge:** Si se han realizados cambios al working directory del staging area del proyecto, el merge no se realizará. En este caso los conflictos suceden debido a cambios pendientes que deben ser resueltos. Por ejemplo, haber hecho cambios a un archivo, e intentar un git merge sin haber hecho un git commit anteriormente.
+
    - Mensaje de error: error: Entry '<fileName>' not uptodate. Cannot merge. (Changes in working directory).
 
 2. **Conflictos durante el merge:** Este tipo de error indica que existen conflictos entre la rama local y la rama siendo unificada (merged). En este tipo de casos, git resuelve la mayor cantidad posible de conflictos, pero en ciertas instancias requerirá nuestra intervención en los archivos.
@@ -44,7 +45,7 @@ Normalmente se utiliza la siguiente convención para organizar el flujo de traba
 
 1. Identificar el archivo con conflictos utilizando git merge (que fallará) y git status para información adicional.
 2. Abrir el archivo conflictivo y resolver los conflictos. Estos estarán separados por una línea: “=======”.
-3. Para resolver este conflicto, simplemente borramos el separador, al igual que el contenido que no agregamos al archivo (“===”, “<<<”,  etc).
+3. Para resolver este conflicto, simplemente borramos el separador, al igual que el contenido que no agregamos al archivo (“===”, “<<<”, etc).
 4. Utilizar git add para tracker los los nuevos cambios del merge.
 5. Creamos un nuevo commit utilizando git commit.
 6. Git creará un nuevo merge commit para finalizar el commit.
@@ -56,6 +57,9 @@ Normalmente se utiliza la siguiente convención para organizar el flujo de traba
 - `git checkout`: Es utilizado para navegar a distintas ramas.
 - `git reset --mixed`: Utilizado para deshacer cambios en la working directory o staging área.
 - `git merge --abort`: Es utilizado para abortar el proceso de git merge y retornar al estado previo el merge.
+
+**Recursos de aprendizaje**
+Optamos por Google Slides como plataforma principal para el diseño de diapositivas, aprovechando sus funciones para crear una presentación visualmente atractiva. En términos de organización de la información, utilizamos Google Docs, facilitando la colaboración en tiempo real y la estructuración ordenada de los contenidos. Para la parte práctica sobre conceptos avanzados de Git, implementamos la herramienta Git, permitiendo demostraciones en tiempo real sobre git branch, git merge y la resolución de conflictos.
 
 **Referencias:**
 
