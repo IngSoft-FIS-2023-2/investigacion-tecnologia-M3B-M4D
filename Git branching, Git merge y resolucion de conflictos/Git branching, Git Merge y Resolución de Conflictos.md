@@ -58,7 +58,7 @@ Normalmente se utiliza la siguiente convención para organizar el flujo de traba
 - `git reset --mixed`: Utilizado para deshacer cambios en la working directory o staging área.
 - `git merge --abort`: Es utilizado para abortar el proceso de git merge y retornar al estado previo el merge.
 
-**Recursos de aprendizaje**
+# Recursos de aprendizaje
 Optamos por Google Slides como plataforma principal para el diseño de diapositivas, aprovechando sus funciones para crear una presentación visualmente atractiva. En términos de organización de la información, utilizamos Google Docs, facilitando la colaboración en tiempo real y la estructuración ordenada de los contenidos. Para la parte práctica sobre conceptos avanzados de Git, implementamos la herramienta Git, permitiendo demostraciones en tiempo real sobre git branch, git merge y la resolución de conflictos.
 
 **Referencias:**
