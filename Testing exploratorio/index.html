@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web con Funcionalidades de Números y Texto</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Gris muy claro */
+            color: #333; /* Negro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1, h2 {
+            color: #007BFF; /* Azul */
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555; /* Gris oscuro */
+        }
+
+        input, button {
+            margin-top: 5px;
+            padding: 8px;
+            border: 1px solid #ddd; /* Gris claro */
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007BFF; /* Azul */
+            color: #fff; /* Blanco */
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Web con Funcionalidades de Números y Texto</h1>
+
+    <h2>Funcionalidades con Números</h2>
+
+    <label for="inputNumero">Ingresa un número para duplicar:</label>
+    <input type="text" id="inputNumero">
+    <button onclick="duplicarNumero()">Duplicar Número</button>
+    <p id="resultadoDuplicado"></p>
+
+    <label for="inputFactorial">Ingresa un número para el factorial:</label>
+    <input type="text" id="inputFactorial">
+    <button onclick="calcularFactorial()">Calcular Factorial</button>
+    <p id="resultadoFactorial"></p>
+
+    <h2>Funcionalidades con Texto</h2>
+
+    <label for="inputPalabra">Ingresa una palabra:</label>
+    <input type="text" id="inputPalabra">
+    <button onclick="invertirPalabra()">Invertir Palabra</button>
+    <p id="resultadoInversionPalabra"></p>
+
+    <script>
+        // Funcionalidades con Números
+        function duplicarNumero() {
+            var inputNumero = document.getElementById("inputNumero").value;
+            var resultado = parseInt(inputNumero) * 2; // Convertir a número y duplicar
+            document.getElementById("resultadoDuplicado").innerHTML = "El doble del número ingresado es: " + resultado;
+        }
+
+        function calcularFactorial() {
+            var inputFactorial = document.getElementById("inputFactorial").value;
+            var numero = parseInt(inputFactorial);
+
+            var resultado = numero >= 0 ? factorial(numero) : 0; // Calcular el factorial o devolver 0
+            document.getElementById("resultadoFactorial").innerHTML = "Factorial de " + numero + " es: " + resultado;
+        }
+
+        function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
+
+        // Funcionalidades con Texto
+        function invertirPalabra() {
+            var inputPalabra = document.getElementById("inputPalabra").value;
+            var resultado = inputPalabra.split("").reverse().join(""); // Invertir la palabra
+            document.getElementById("resultadoInversionPalabra").innerHTML = "Palabra invertida: " + resultado;
+        }
+    </script>
+
+</body>
+</html>
