@@ -61,7 +61,7 @@ Normalmente se utiliza la siguiente convención para organizar el flujo de traba
 # Recursos de aprendizaje
 Optamos por Google Slides como plataforma principal para el diseño de diapositivas, aprovechando sus funciones para crear una presentación visualmente atractiva. En términos de organización de la información, utilizamos Google Docs, facilitando la colaboración en tiempo real y la estructuración ordenada de los contenidos. Para la parte práctica sobre conceptos avanzados de Git, implementamos la herramienta Git, permitiendo demostraciones en tiempo real sobre git branch, git merge y la resolución de conflictos.
 
-**Referencias:**
+# Referencias:
 
 - [Git merge conflicts: Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts)
 - [How to resolve merge conflicts in Git? - Simplilearn.com](https://www.simplilearn.com/tutorials/git-tutorial/merge-conflicts-in-git)
